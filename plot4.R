@@ -16,6 +16,6 @@ points(condate, useddata$Sub_metering_2,type="l",col="red")
 points(condate, useddata$Sub_metering_3,type="l",col="blue")
 legend("topright",pch="_",col=c("black","red","blue"), legend=c("Sub_metering_1               ","Sub_metering_2               ","Sub_metering_3              "), box.lty=0,inset = 0.02)
 plot(condate, useddata$Global_reactive_power,ylab="Global_reactive_power",xlab="daytime", type="l",col="black")
-dev.copy(png,file="plot4.png")
+dev.copy(png,file="plot4.png", width = 480, height=480)
 dev.off()
 
